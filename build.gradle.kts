@@ -18,14 +18,13 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-
     implementation("org.springframework.boot:spring-boot-starter-validation")
 
-    runtimeOnly("com.h2database:h2")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
 
     // implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
     // runtimeOnly("io.r2dbc:r2dbc-h2")
